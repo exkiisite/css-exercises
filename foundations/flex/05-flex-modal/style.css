@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
 html, body {
   height: 100%;
 }
@@ -20,6 +21,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	padding: 16px;
 }
 
 .icon {
@@ -33,6 +38,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+	flex-shrink: 0;
 }
 
 .close-button {
@@ -60,10 +66,24 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+	max-width: fit-content;
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+	max-width: fit-content;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 900;
+	font-size: 20px; 
+	margin-bottom: 8px;
+}
+
+.text {
+	padding-bottom: 16px;
 }
